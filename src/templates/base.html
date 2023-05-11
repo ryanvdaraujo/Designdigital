@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {% block title %}
+        {% block titulo %}
         
-        {% endblock title %}
+        {% endblock %}
         <link rel="stylesheet" href="../static/normalize.css">
         <link rel="stylesheet" href="../static/style.css">
     </head>
-    <body>
+    <body background="../static/image/backgroundportdesf1800pb.jpg">
         <div class="topo">
             <div class="hamburguer">
                 <input id="menu__toggle" type="checkbox" />
@@ -19,9 +19,9 @@
                 </label>
             
                 <ul class="menu__box">
-                    <li><a class="menu__item" href="index.html">Home</a></li>
-                    <li><a class="menu__item" href="sobre.html">Sobre</a></li>
-                    <li><a class="menu__item" href="projetos.html">Projetos</a></li>
+                    <li><a class="menu__item" href="/home">Home</a></li>
+                    <li><a class="menu__item" href="/sobre">Sobre</a></li>
+                    <li><a class="menu__item" href="/projetos">Projetos</a></li>
                 </ul>
             </div>
             <div class="nome">
@@ -30,8 +30,10 @@
             
             <div class="imagem">
                 <img src="../static/image/R45.png" alt="Logo">
-            </div>
-            
+            </div> 
         </div>
+        {% block conteudo %}
+
+        {% endblock %}
     </body>
 </html>
