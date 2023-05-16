@@ -215,11 +215,13 @@ html{
   margin-bottom: 2%;
   display: flex;
   width: 90%;
-  justify-content: space-around;
-  margin-left: 2%;
-  margin-right: 2%;
+  justify-content: space-evenly;
 }
 
 #prog {
+  height: 40vw;
+}
+
+#fut {
   height: 40vw;
 }
