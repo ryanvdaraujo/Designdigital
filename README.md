@@ -33,3 +33,9 @@ pip install -r requirements.txt
 ```bash
 python app.py --host 0.0.0.0
 ```
+# ***Tecnologias utilizadas:***
+
+- **Python**
+- **Flask**
+- **Jinja2**
+- **Werkzeug**
