@@ -225,3 +225,37 @@ html{
 #fut {
   height: 40vw;
 }
+
+/* estilo projetos */
+
+.projetos-pai{
+  display: flex;
+  justify-content: center;
+}
+
+.projetos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 2%;
+}
+
+.texto-projetos{
+  background-color: rgb(217, 217, 217, 0.6);
+}
+
+#van-misterio{
+  height: 40vw;
+  margin-left: 2%;
+}
+
+#placar{
+  height: 20vw;
+  margin-right: 2%;
+}
+
+#data-sars{
+  height: 12vw;
+  margin-left: 2%;
+}
