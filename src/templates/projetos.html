@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 
 {% block titulo %}
-    <title>Meus Projetos</title>
+    <title>My Projects</title>
 {% endblock %}
 
 {% block conteudo %}
     <div class="sobre">
         <div class="subtitulo">
-            <h2>PROJETOS</h2>
+            <h2>PROJECTS</h2>
         </div>
     </div>
     <div class="projetos-pai">
         <div class="projetos">
             <div class="texto-projetos">
-                <h3>Van Mistério (Clébinho) - Projeto desenvolvido por mim junto a alguns amigos que envolvia a utilização de microcontrolador, programado em C++ que tinha como proposta utilizar a conexão bluetooth do celular para controlar o carrinho, utilizamos arduino, minimotor cc, bateria, módulo bluetooth e alguns outros materiais, com ele conseguimos o terceiro lugar na corrida, que aconteceu na ETEC - SJC.</h3>
+                <h3>{{ textovanmisterio }}</h3>
             </div>
                 <img src="../static/image/vanmisterio_proj.jpg" alt="projeto van mistério bluetooth" id="van-misterio">
         </div>
@@ -22,14 +22,14 @@
         <div class="projetos">
             <img src="../static/image/placar_proj.jpg" alt="projeto placar automático" id="placar">
             <div class="texto-projetos">
-                <h3>Esse foi o projeto desenvolvido como meu TCC, a idéia era de que tivessemos um placar automatizado para que fossem disputadas partidas do futebol de robô(evento que ocorria anualmente na ETEC) e todos conseguissem saber quanto está o jogo sem a necessidade de ninguém contar com as mãos, fizemos o protótipo em simuladores online, em seguida iniciamos a montagem e a programação e depois integramos ao campo(mesa da foto). </h3>
+                <h3>{{ textoplacar }} </h3>
             </div>
         </div>
     </div>
     <div class="projetos-pai">
         <div class="projetos">
             <div class="texto-projetos">
-                <h3>O Data-Sars é o projeto em que estou trabalhando atualmente junto ao meu grupo de API na Fatec, ele consiste em facilitar a análise de dados referentes as consequências do covid-19, para isso dispõe de gráficos  de diversos tópicos possibilitando a visualização de forma ampla e fácil dos fatos.</h3>
+                <h3>{{ textodatasars }}</h3>
             </div>
                 <a href="https://github.com/GRUPOAPIDSM2023/API" target="_blank"> <img src="../static/image/logoDataSars.png" alt="projeto data-sars" id="data-sars"> </a>
         </div>
