@@ -109,7 +109,7 @@ html{
     opacity: 1;
 }
 
-.imagem > img {
+.imagem > a > img {
     width: 70px;
 
 }
@@ -258,4 +258,43 @@ html{
 #data-sars{
   height: 12vw;
   margin-left: 2%;
+}
+
+@media screen and (max-width:600px) {
+  body {
+    background-repeat: repeat;
+  }
+
+/* home */
+  .nome {
+    align-items: center;
+  }
+
+  .nome > h1 {
+    font-size: 120%;
+  }
+/* fim home */
+
+/* sobre */
+  .fotos-sobre {
+    flex-direction: column;
+  }
+
+  #prog {
+    height: 100%;
+  }
+
+  #fut {
+    height: 100%;
+  }
+/* fim sobre */
+
+/* projetos */
+  .projetos {
+    flex-direction: column;
+  }
+
+  #tl {
+    flex-direction: row-reverse;
+  }
 }
