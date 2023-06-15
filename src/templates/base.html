@@ -12,29 +12,31 @@
         <link rel="shortcut icon" href="../static/image/R45.png"/>
     </head>
     <body>
-        <div class="topo">
-            <div class="hamburguer">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
-            
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="/home">Home</a></li>
-                    <li><a class="menu__item" href="/sobre">About</a></li>
-                    <li><a class="menu__item" href="/projetos">Projects</a></li>
-                </ul>
+        <section>
+            <div class="topo">
+                <div class="hamburguer">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="/home">Home</a></li>
+                        <li><a class="menu__item" href="/sobre">About</a></li>
+                        <li><a class="menu__item" href="/projetos">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="nome">
+                    <h1>Ryan Verissimo de Araujo</h1>
+                </div>
+                
+                <div class="imagem">
+                    <a href="/home"><img src="../static/image/R45.png" alt="Logo"></a>
+                </div> 
             </div>
-            <div class="nome">
-                <h1>Ryan Verissimo de Araujo</h1>
-            </div>
-            
-            <div class="imagem">
-                <a href="/home"><img src="../static/image/R45.png" alt="Logo"></a>
-            </div> 
-        </div>
-        {% block conteudo %}
+            {% block conteudo %}
 
-        {% endblock %}
+            {% endblock %}
+        </section>
     </body>
 </html>

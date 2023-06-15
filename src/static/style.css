@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
-body{
-  background-image: url(image/backgroundportdesf1800pb.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 html{
   font-family: 'Inter', sans-serif, 'Times New Roman', Times, serif;
 }
+
+body{
+  background-image: url(image/backgroundportdesf1800pb.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+section{
+ height: 100vh;
+}
+
 /* menu */
 #menu__toggle {
     opacity: 0;
@@ -82,12 +86,13 @@ html{
 
 /* restante do base */
 .topo{
-    background-color: rgb(217, 217, 217, 0.5);
+    background-color: rgb(217, 217, 217);
     width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
     text-align: center;
+    position: fixed;
 }
 .nome {
     width: 100%;
@@ -125,6 +130,7 @@ html{
 .index > .foto-perfil {
   width: 70%;
   text-align: center;
+  margin-top: 20%;
 }
 
 .index > .foto-perfil > img {
@@ -175,7 +181,7 @@ html{
   height: 8%;
   text-align: center;
   width: 90%;
-  margin-top: 2%;
+  margin-top: 20%;
   margin-bottom: 2%;
   align-items: center;
   z-index: -1;
@@ -239,10 +245,11 @@ html{
   justify-content: center;
   width: 90%;
   margin-bottom: 2%;
+  background-color: rgb(217, 217, 217, 0.6);
 }
 
 .texto-projetos{
-  background-color: rgb(217, 217, 217, 0.6);
+  line-height: 220%;
 }
 
 #van-misterio{
@@ -261,9 +268,6 @@ html{
 }
 
 @media screen and (max-width:600px) {
-  body {
-    background-repeat: repeat;
-  }
 
 /* home */
   .nome {
@@ -295,6 +299,7 @@ html{
   }
 
   #tl {
-    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
